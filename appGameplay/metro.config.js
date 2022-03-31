@@ -15,3 +15,20 @@ module.exports = {
     }),
   },
 };
+
+// const  { getDefaultConfig }  =  require ( "metro-config" ) ;
+
+// módulo . export  =  ( async  ( )  =>  { 
+//   const  { 
+//     resolver : { sourceExts , assetExts } 
+//   }  =  await  getDefaultConfig ( ) ; 
+//   return  { 
+//     transformer : { 
+//       babelTransformerPath : require .resolv ( " react -native-svg-transformer" ) } , resolvedor : { assetExts : assetExts . filter
+    
+    
+//       ( ext  =>  ext  !==  "svg" ) , 
+//       sourceExts : [ ... sourceExts ,  "svg" ] 
+//     } 
+//   } ; 
+// } ) ( ) ;

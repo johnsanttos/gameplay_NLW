@@ -4,12 +4,15 @@ import { View, Text, Image, StatusBar } from "react-native";
 import IlustrationImg from '../../assets/illustration.png';
 import { styles } from "./styles";
 import { ButtonIcon } from "../../components/ButtonIcon";
+import { useNavigation } from "@react-navigation/native";
 
 export function SignIn() {
 
-    const [text, setText] = useState('')
-
-
+    const navigation =useNavigation ()
+ 
+    function handleSignIn() {
+        navigation.navigate ('Home')
+    }
     return (
         <View style={styles.container}>
             <StatusBar
@@ -42,7 +45,7 @@ export function SignIn() {
                 </Text>
                 <ButtonIcon
                     title="Entrar no Discord"
-                    activeOpacity={ 0.7}
+                    onPress ={handleSignIn}
 
                 />
             </View>
